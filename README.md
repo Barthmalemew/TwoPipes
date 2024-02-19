@@ -13,3 +13,7 @@ git@github.com:Barthmalemew/TwoPipes.git
 ```
 ./2pipes
 ```
+### enter string
+```
+"Hello"
+```
