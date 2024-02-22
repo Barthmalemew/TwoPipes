@@ -11,7 +11,7 @@ git@github.com:Barthmalemew/TwoPipes.git
 ## Usage
 ### run in terminal
 ```
-./2pipes
+./pipes
 ```
 ### enter string
 ```

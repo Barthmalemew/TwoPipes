@@ -83,16 +83,14 @@ int main() {
             {
                 read_msg[i] = tolower(write_msg[i]);
             }
-            else //this was also wrong,because it doesnt know 
-                 //what to do if the character isnt upper or lower
-                 //in our case it doesnt matter because spaces will just change to space.
+            else 
             {
                 read_msg[i] = toupper(write_msg[i]);
             }
         }
 
         // Write the message to pipe 2
-        write(p2[WRITE_END], read_msg, strlen(read_msg) + 1); //this is what was wrong, you were taking the strlen of your write_msg still
+        write(p2[WRITE_END], read_msg, strlen(read_msg) + 1); 
 
         // Close the write end of pipe 2
         close(p2[WRITE_END]);
